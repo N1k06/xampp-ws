@@ -6,9 +6,10 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "forwardPorts": [3000, 8080],
+  "forwardPorts": [3000, 8080, 3306],
   "portsAttributes": {
     "3000": { "label": "La mia App (PHP)" },
+    "3306": { "label": "MySQL DB" },
     "8080": { "label": "phpMyAdmin" }
   },
   "postCreateCommand": "git config --global --add safe.directory /var/www/html && rm -f .git/hooks/pre-push",

@@ -10,6 +10,8 @@ services:
       TZ: Europe/Rome
     volumes:
       - ./mariadb_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
 
   phpmyadmin:
     image: phpmyadmin:5.2.1-apache
